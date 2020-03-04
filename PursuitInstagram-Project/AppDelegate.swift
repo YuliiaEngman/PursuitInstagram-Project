@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+      // Override point for customization after application launch.
+      
+      //Step 2: Configuring Firebase
+      FirebaseApp.configure()
+      return true
     }
 
     // MARK: UISceneSession Lifecycle
