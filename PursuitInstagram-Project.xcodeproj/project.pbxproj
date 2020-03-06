@@ -26,6 +26,7 @@
 		0FFA063D2412FC5400009939 /* PhotoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA063C2412FC5400009939 /* PhotoFeedViewController.swift */; };
 		0FFA063F2412FC9D00009939 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA063E2412FC9D00009939 /* AddPhotoViewController.swift */; };
 		0FFA06412412FD1B00009939 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06402412FD1B00009939 /* ProfileViewController.swift */; };
+		0FFA06432413015F00009939 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06422413015F00009939 /* StorageService.swift */; };
 		3614140A893262DC55C494F9 /* Pods_PursuitInstagram_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C714004C78DF2E5047B5C356 /* Pods_PursuitInstagram_ProjectTests.framework */; };
 		A049980ED6304BE4873C92D0 /* Pods_PursuitInstagram_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41C5CE7EB75CBD01C107375 /* Pods_PursuitInstagram_Project.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		0FFA063C2412FC5400009939 /* PhotoFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewController.swift; sourceTree = "<group>"; };
 		0FFA063E2412FC9D00009939 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		0FFA06402412FD1B00009939 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0FFA06422413015F00009939 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		14855A7D240A8139D5BFC3C7 /* Pods-PursuitInstagram-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-ProjectTests/Pods-PursuitInstagram-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		42A15DBDBC4BE0E27D9BD60F /* Pods-PursuitInstagram-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-ProjectTests/Pods-PursuitInstagram-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81E969D9268D984D44D2A02C /* Pods-PursuitInstagram-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-Project.release.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-Project/Pods-PursuitInstagram-Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				0FFA062F2412CE0400009939 /* AuthentificationSession.swift */,
 				0FFA06312412CE4A00009939 /* DatabaseService.swift */,
+				0FFA06422413015F00009939 /* StorageService.swift */,
 			);
 			path = FirebaseServices;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				0FFA06412412FD1B00009939 /* ProfileViewController.swift in Sources */,
 				0FFA06372412F77400009939 /* UIViewController+Alerts.swift in Sources */,
 				0F30D604240F672B00D5B7D1 /* SceneDelegate.swift in Sources */,
+				0FFA06432413015F00009939 /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
