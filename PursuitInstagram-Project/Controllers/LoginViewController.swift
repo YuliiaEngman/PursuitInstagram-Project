@@ -8,16 +8,20 @@
 
 import UIKit
 
+enum AccountState {
+    case existingUser
+    case newUser
+}
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var pursuitStagramLabel: UILabel!
-    
     @IBOutlet weak var pursuitStagramImage: UIImageView!
-    
     @IBOutlet weak var emailLabel: UITextField!
-    
     @IBOutlet weak var passwordLabel: UITextField!
-    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var createAccountLabel: UIButton!
     @IBOutlet var errorLabel: UIView!
     
     
