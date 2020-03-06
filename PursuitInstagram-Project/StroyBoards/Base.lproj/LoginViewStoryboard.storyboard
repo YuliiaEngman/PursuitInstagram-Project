@@ -15,51 +15,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PursuitStagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZi-CP-GEq">
-                                <rect key="frame" x="30" y="74" width="354" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZi-CP-GEq">
+                                <rect key="frame" x="20" y="64" width="374" height="63.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="PursuitStagram">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="50" name="SnellRoundhand-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-xP-HWC">
-                                <rect key="frame" x="87" y="169" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-xP-HWC" customClass="DesignableImageView" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                                <rect key="frame" x="100" y="147.5" width="214" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W3U-xP-HWC" secondAttribute="height" multiplier="1:1" id="RNF-xC-utF"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email textfield" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-Pr-T1T">
-                                <rect key="frame" x="20" y="360" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password textfiled" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-YI-AWO" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                                <rect key="frame" x="20" y="435.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password textfiled" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-YI-AWO">
-                                <rect key="frame" x="20" y="442" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5r-5a-abv">
-                                <rect key="frame" x="188" y="523" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5r-5a-abv" customClass="DesignableButton" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                                <rect key="frame" x="150" y="499.5" width="114" height="50"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-GM-qj5">
-                                <rect key="frame" x="158" y="612" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Account"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-GM-qj5" customClass="DesignableButton" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                                <rect key="frame" x="100" y="569.5" width="214" height="50"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-7P-KCf">
-                                <rect key="frame" x="190" y="677" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-7P-KCf">
+                                <rect key="frame" x="20" y="639.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email textfield" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-Pr-T1T" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                                <rect key="frame" x="20" y="381.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="SZi-CP-GEq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Czn-oS-nda"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZi-CP-GEq" secondAttribute="trailing" constant="30" id="os9-aA-Kww"/>
-                            <constraint firstItem="SZi-CP-GEq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rd0-bY-jyu"/>
+                            <constraint firstItem="3SM-Pr-T1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="13M-mE-zd9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZi-CP-GEq" secondAttribute="trailing" constant="20" id="2Yd-Vp-EPH"/>
+                            <constraint firstItem="W3U-xP-HWC" firstAttribute="top" secondItem="SZi-CP-GEq" secondAttribute="bottom" constant="20" id="EHD-YT-YUx"/>
+                            <constraint firstItem="z3U-GM-qj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Fyt-0E-rCM"/>
+                            <constraint firstItem="LDQ-YI-AWO" firstAttribute="top" secondItem="3SM-Pr-T1T" secondAttribute="bottom" constant="20" id="Gsr-LK-u6Q"/>
+                            <constraint firstItem="3SM-Pr-T1T" firstAttribute="top" secondItem="W3U-xP-HWC" secondAttribute="bottom" constant="20" id="JLg-WW-J9L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A5r-5a-abv" secondAttribute="trailing" constant="150" id="JjA-Os-DUw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LDQ-YI-AWO" secondAttribute="trailing" constant="20" id="L7t-vP-tgM"/>
+                            <constraint firstItem="3SM-Pr-T1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NE1-jl-MHs"/>
+                            <constraint firstItem="A5r-5a-abv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Nwb-LM-rni"/>
+                            <constraint firstItem="A5r-5a-abv" firstAttribute="top" secondItem="LDQ-YI-AWO" secondAttribute="bottom" constant="30" id="OIP-Ym-igx"/>
+                            <constraint firstItem="YHI-7P-KCf" firstAttribute="top" secondItem="z3U-GM-qj5" secondAttribute="bottom" constant="20" id="Pi6-aR-VJn"/>
+                            <constraint firstItem="W3U-xP-HWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="T90-Ag-6ev"/>
+                            <constraint firstItem="SZi-CP-GEq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xbq-fJ-KMd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3SM-Pr-T1T" secondAttribute="trailing" constant="20" id="aFO-2x-YWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHI-7P-KCf" secondAttribute="trailing" constant="20" id="cBQ-Bs-OGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3U-xP-HWC" secondAttribute="trailing" constant="100" id="eAQ-2A-dF7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z3U-GM-qj5" secondAttribute="trailing" constant="100" id="jJI-M3-IBB"/>
+                            <constraint firstItem="LDQ-YI-AWO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kYz-FS-R1R"/>
+                            <constraint firstItem="YHI-7P-KCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ka9-5T-Wb1"/>
+                            <constraint firstItem="SZi-CP-GEq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pPj-Ym-HQP"/>
+                            <constraint firstItem="z3U-GM-qj5" firstAttribute="top" secondItem="A5r-5a-abv" secondAttribute="bottom" constant="20" id="qNd-Ge-uTR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3SM-Pr-T1T" secondAttribute="trailing" constant="20" id="zXD-vw-gnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,4 +99,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PhotoIcon" width="225" height="225"/>
+    </resources>
 </document>
