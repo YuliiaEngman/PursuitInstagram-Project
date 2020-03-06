@@ -9,12 +9,28 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var pursuitStagramLabel: UILabel!
+    
+    @IBOutlet weak var pursuitStagramImage: UIImageView!
+    
+    @IBOutlet weak var emailLabel: UITextField!
+    
+    @IBOutlet weak var passwordLabel: UITextField!
+    
+    @IBOutlet var errorLabel: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func loginActionButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func createAccountActionButton(_ sender: UIButton) {
+    }
+    
 
 }
 

@@ -45,6 +45,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Efa-34-DpW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-GM-qj5" customClass="DesignableButton" customModule="PursuitInstagram_Project" customModuleProvider="target">
                                 <rect key="frame" x="100" y="569.5" width="214" height="50"/>
@@ -52,6 +55,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zl-Fc-rZW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-7P-KCf">
                                 <rect key="frame" x="20" y="639.5" width="374" height="21"/>
@@ -93,6 +99,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="3SM-Pr-T1T" id="aLq-Op-3Nr"/>
+                        <outlet property="errorLabel" destination="YHI-7P-KCf" id="zr6-8F-jxQ"/>
+                        <outlet property="passwordLabel" destination="LDQ-YI-AWO" id="4nM-xv-XvQ"/>
+                        <outlet property="pursuitStagramImage" destination="W3U-xP-HWC" id="du8-PL-D4A"/>
+                        <outlet property="pursuitStagramLabel" destination="SZi-CP-GEq" id="5gw-KP-eVy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
