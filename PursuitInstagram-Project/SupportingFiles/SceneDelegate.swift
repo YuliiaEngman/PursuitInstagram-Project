@@ -22,18 +22,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.windowScene = windowScene
         
-            let storyBoard = UIStoryboard.init(name: "LoginViewStoryboard", bundle: nil)
-            guard let loginVC = storyBoard.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else {
-                return
-            }
-            window?.rootViewController = loginVC
+//            let storyBoard = UIStoryboard.init(name: "LoginViewStoryboard", bundle: nil)
+//            guard let loginVC = storyBoard.instantiateViewController(identifier: "LoginViewController") as? LoginViewController else {
+//                return
+//            }
+//            window?.rootViewController = loginVC
               //  LoginViewController()
         
-//            if let _ = Auth.auth().currentUser {
-//                UIViewController.showViewController(storyboardName: "MainView", viewControllerID: "MainTabBarController")
-//            } else {
-//                UIViewController.showViewController(storyboardName: "LoginScreen", viewControllerID: "LoginViewController")
-//            }
+            if let _ = Auth.auth().currentUser {
+                UIViewController.showViewController(storyboardName: "MainView", viewControllerId: "MainTabBarController")
+            } else {
+                UIViewController.showViewController(storyboardName: "LoginViewStoryboard", viewControllerId: "LoginViewController")
+            }
         
             window?.makeKeyAndVisible()
         }

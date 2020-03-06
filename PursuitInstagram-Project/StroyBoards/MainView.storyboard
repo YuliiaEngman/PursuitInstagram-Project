@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Photo-->
+        <scene sceneID="ggz-xX-mnX">
+            <objects>
+                <viewController storyboardIdentifier="AddPhotoViewController" id="DGG-uQ-aai" customClass="AddPhotoViewController" customModule="PursuitInstagram_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8B-Mf-uqM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rJt-Gc-RaS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Photo" image="plus" catalog="system" id="BNd-3z-w1R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRj-0P-cXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="1274"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Lnj-ys-go5">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="NJi-sn-SzJ" customClass="ProfileViewController" customModule="PursuitInstagram_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DU3-5o-V2a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="T4O-7K-aiz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="xyk-GJ-3tj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gry-Ie-hEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="2060"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="5vA-HV-k0Y">
+            <objects>
+                <viewController storyboardIdentifier="PhotoFeedViewController" id="DYB-cE-IXG" customClass="PhotoFeedViewController" customModule="PursuitInstagram_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4l-vW-TBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gAK-17-ao3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="photo.on.rectangle" catalog="system" id="4cr-n5-imv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Man-kN-FBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="481"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="P4q-f0-tKu">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="hWg-uV-5Uf" customClass="MainTabBarController" customModule="PursuitInstagram_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aGU-nj-33n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DYB-cE-IXG" kind="relationship" relationship="viewControllers" id="5Lv-Fd-jdG"/>
+                        <segue destination="DGG-uQ-aai" kind="relationship" relationship="viewControllers" id="s8M-X3-fur"/>
+                        <segue destination="NJi-sn-SzJ" kind="relationship" relationship="viewControllers" id="dWl-v9-7tb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4l-aD-ptk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2426" y="1274"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
