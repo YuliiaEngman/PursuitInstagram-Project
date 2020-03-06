@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         clearErrorLabel()
+        passwordTextField.delegate = self
     }
     
     private func clearErrorLabel() {
@@ -61,14 +62,14 @@ class LoginViewController: UIViewController {
                             "\(error.localizedDescription)"
                             self?.errorLabel.textColor = .systemRed
                         }
-                    case .success(let authDataResult):
+                    //case .success(let authDataResult):
                         // TODO: comment line above and uncomment line below
-                       // case .success:
+                       case .success:
                         DispatchQueue.main.async {
-                            self?.errorLabel.text = "Welcome back user with email: \(authDataResult.user.email ?? "")"
-                            self?.errorLabel.textColor = .systemGreen
+//                            self?.errorLabel.text = "Welcome back user with email: \(authDataResult.user.email ?? "")"
+//                            self?.errorLabel.textColor = .systemGreen
                             //TODO: navigate to the main view
-                           // self?.navigateToMainView()
+                           self?.navigateToMainView()
                         }
                     }
                 }
@@ -82,28 +83,27 @@ class LoginViewController: UIViewController {
                             "\(error.localizedDescription)"
                             self?.errorLabel.textColor = .systemRed
                         }
-                    case .success(let authDataResult):
+                    //case .success(let authDataResult):
                         // TODO: comment line above and uncomment line below
-                      //  case .success:
+                      case .success:
 
                         DispatchQueue.main.async {
-                            self?.errorLabel.text = "Hope ypu enjoy our app experience. Email used: \(authDataResult.user.email ?? "")"
-                            self?.errorLabel.textColor = .systemGreen
+//                            self?.errorLabel.text = "Hope ypu enjoy our app experience. Email used: \(authDataResult.user.email ?? "")"
+//                            self?.errorLabel.textColor = .systemGreen
 
                             //TODO: navigate to the main view
-                            //self?.navigateToMainView()
+                            self?.navigateToMainView()
                         }
                         
                     }
                 }
             }
-            resignFirstResponder()
         }
     
     //FIXME: uncomment it out
-//    private func navigateToMainView() {
-//        UIViewController.showViewController(storyboardName: "MainView", viewControllerId: "MainTabBarController")
-//    }
+    private func navigateToMainView() {
+        UIViewController.showViewController(storyboardName: "MainView", viewControllerId: "MainTabBarController")
+    }
     
     @IBAction func createAccountActionButton(_ sender: UIButton) {
         // change the account login state
@@ -136,6 +136,13 @@ class LoginViewController: UIViewController {
 //                self.accountStateButton.setTitle("LOGIN", for: .normal)
 //            }, completion: nil)
         }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        passwordTextField.resignFirstResponder()
+        return true
     }
 }
 

@@ -31,12 +31,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-3M-6EO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-3M-6EO" customClass="DesignableImageView" customModule="PursuitInstagram_Project" customModuleProvider="target">
                                 <rect key="frame" x="142" y="74.5" width="130" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="CGq-JD-y6c"/>
                                     <constraint firstAttribute="width" secondItem="8Pp-3M-6EO" secondAttribute="height" multiplier="1:1" id="PM2-Y8-2he"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a display name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="geA-tu-W7s">
                                 <rect key="frame" x="20" y="254" width="374" height="34"/>
@@ -52,14 +57,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-FS-ZQ2">
                                 <rect key="frame" x="158" y="433" width="98" height="30"/>
                                 <state key="normal" title="Update Profile"/>
+                                <connections>
+                                    <action selector="updateUserProfileButtonPressed:" destination="NJi-sn-SzJ" eventType="touchUpInside" id="8Ue-s3-enn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Z5-VF-17T">
                                 <rect key="frame" x="20" y="513" width="374" height="30"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signoutButtonPressed:" destination="NJi-sn-SzJ" eventType="touchUpInside" id="orn-8V-PFy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rq-yF-8L7">
                                 <rect key="frame" x="287" y="128" width="22" height="22"/>
                                 <state key="normal" image="pencil.and.outline" catalog="system"/>
+                                <connections>
+                                    <action selector="userphotoUpdateButtonPressed:" destination="NJi-sn-SzJ" eventType="touchUpInside" id="xaK-YU-QPo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -83,6 +97,11 @@
                         <viewLayoutGuide key="safeArea" id="T4O-7K-aiz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="xyk-GJ-3tj"/>
+                    <connections>
+                        <outlet property="displayUsernameTextField" destination="geA-tu-W7s" id="oAw-by-mxJ"/>
+                        <outlet property="emailLabel" destination="Ijn-37-uZt" id="v3O-cJ-82r"/>
+                        <outlet property="profileImageView" destination="8Pp-3M-6EO" id="7Xh-D4-UIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gry-Ie-hEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
