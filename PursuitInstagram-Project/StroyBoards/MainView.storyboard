@@ -30,14 +30,63 @@
                     <view key="view" contentMode="scaleToFill" id="DU3-5o-V2a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-3M-6EO">
+                                <rect key="frame" x="142" y="74.5" width="130" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="CGq-JD-y6c"/>
+                                    <constraint firstAttribute="width" secondItem="8Pp-3M-6EO" secondAttribute="height" multiplier="1:1" id="PM2-Y8-2he"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a display name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="geA-tu-W7s">
+                                <rect key="frame" x="20" y="254" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijn-37-uZt">
+                                <rect key="frame" x="20" y="318" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-FS-ZQ2">
+                                <rect key="frame" x="158" y="433" width="98" height="30"/>
+                                <state key="normal" title="Update Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Z5-VF-17T">
+                                <rect key="frame" x="20" y="513" width="374" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rq-yF-8L7">
+                                <rect key="frame" x="287" y="128" width="22" height="22"/>
+                                <state key="normal" image="pencil.and.outline" catalog="system"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Pp-3M-6EO" firstAttribute="top" secondItem="T4O-7K-aiz" secondAttribute="top" constant="30" id="9jd-Ch-XmF"/>
+                            <constraint firstItem="geA-tu-W7s" firstAttribute="leading" secondItem="T4O-7K-aiz" secondAttribute="leading" constant="20" id="9zP-8i-eLC"/>
+                            <constraint firstItem="8Pp-3M-6EO" firstAttribute="centerX" secondItem="DU3-5o-V2a" secondAttribute="centerX" id="CVt-XT-WIi"/>
+                            <constraint firstItem="Ijn-37-uZt" firstAttribute="top" secondItem="geA-tu-W7s" secondAttribute="bottom" constant="30" id="CqK-CN-IZH"/>
+                            <constraint firstItem="Ijn-37-uZt" firstAttribute="leading" secondItem="T4O-7K-aiz" secondAttribute="leading" constant="20" id="Djq-fy-5cA"/>
+                            <constraint firstItem="6Z5-VF-17T" firstAttribute="top" secondItem="OP5-FS-ZQ2" secondAttribute="bottom" constant="50" id="Lbg-LQ-Sa1"/>
+                            <constraint firstItem="geA-tu-W7s" firstAttribute="top" secondItem="8Pp-3M-6EO" secondAttribute="bottom" constant="50" id="X3s-fV-GKZ"/>
+                            <constraint firstItem="6Z5-VF-17T" firstAttribute="leading" secondItem="T4O-7K-aiz" secondAttribute="leading" constant="20" id="XFm-Lx-EzA"/>
+                            <constraint firstItem="T4O-7K-aiz" firstAttribute="trailing" secondItem="geA-tu-W7s" secondAttribute="trailing" constant="20" id="en5-gb-2Q8"/>
+                            <constraint firstItem="5rq-yF-8L7" firstAttribute="leading" secondItem="8Pp-3M-6EO" secondAttribute="trailing" constant="15" id="hCA-Rr-zCD"/>
+                            <constraint firstItem="T4O-7K-aiz" firstAttribute="trailing" secondItem="6Z5-VF-17T" secondAttribute="trailing" constant="20" id="ikt-Xb-eF7"/>
+                            <constraint firstItem="T4O-7K-aiz" firstAttribute="trailing" secondItem="Ijn-37-uZt" secondAttribute="trailing" constant="20" id="pbY-hc-Tld"/>
+                            <constraint firstItem="OP5-FS-ZQ2" firstAttribute="centerX" secondItem="DU3-5o-V2a" secondAttribute="centerX" id="qhD-7D-Xd3"/>
+                            <constraint firstItem="OP5-FS-ZQ2" firstAttribute="centerY" secondItem="DU3-5o-V2a" secondAttribute="centerY" id="rcg-6k-YFb"/>
+                            <constraint firstItem="5rq-yF-8L7" firstAttribute="centerY" secondItem="8Pp-3M-6EO" secondAttribute="centerY" id="sTU-pV-h88"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T4O-7K-aiz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="xyk-GJ-3tj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gry-Ie-hEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="2060"/>
+            <point key="canvasLocation" x="3379.7101449275365" y="2059.8214285714284"/>
         </scene>
         <!--Photos-->
         <scene sceneID="5vA-HV-k0Y">
@@ -76,6 +125,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="person.crop.circle" catalog="system" width="64" height="60"/>
         <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
         <image name="plus" catalog="system" width="64" height="56"/>
