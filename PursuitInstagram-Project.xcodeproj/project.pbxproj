@@ -17,6 +17,8 @@
 		0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */; };
 		0FFA06282412CBE500009939 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06272412CBE500009939 /* DesignableView.swift */; };
 		0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */; };
+		0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062F2412CE0400009939 /* AuthentificationSession.swift */; };
+		0FFA06322412CE4A00009939 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06312412CE4A00009939 /* DatabaseService.swift */; };
 		3614140A893262DC55C494F9 /* Pods_PursuitInstagram_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C714004C78DF2E5047B5C356 /* Pods_PursuitInstagram_ProjectTests.framework */; };
 		A049980ED6304BE4873C92D0 /* Pods_PursuitInstagram_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41C5CE7EB75CBD01C107375 /* Pods_PursuitInstagram_Project.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FFA06272412CBE500009939 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		0FFA062F2412CE0400009939 /* AuthentificationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationSession.swift; sourceTree = "<group>"; };
+		0FFA06312412CE4A00009939 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		14855A7D240A8139D5BFC3C7 /* Pods-PursuitInstagram-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-ProjectTests/Pods-PursuitInstagram-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		42A15DBDBC4BE0E27D9BD60F /* Pods-PursuitInstagram-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-ProjectTests/Pods-PursuitInstagram-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81E969D9268D984D44D2A02C /* Pods-PursuitInstagram-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PursuitInstagram-Project.release.xcconfig"; path = "Target Support Files/Pods-PursuitInstagram-Project/Pods-PursuitInstagram-Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +81,9 @@
 		0F30D5F5240F672B00D5B7D1 = {
 			isa = PBXGroup;
 			children = (
+				0FFA06292412CCC200009939 /* Extensions */,
+				0FFA062C2412CD4000009939 /* Models */,
+				0FFA062E2412CDC800009939 /* FirebaseServices */,
 				0F30D600240F672B00D5B7D1 /* PursuitInstagram-Project */,
 				0F30D617240F672D00D5B7D1 /* PursuitInstagram-ProjectTests */,
 				0F30D5FF240F672B00D5B7D1 /* Products */,
@@ -97,12 +104,10 @@
 		0F30D600240F672B00D5B7D1 /* PursuitInstagram-Project */ = {
 			isa = PBXGroup;
 			children = (
-				0F30D601240F672B00D5B7D1 /* AppDelegate.swift */,
-				0F30D603240F672B00D5B7D1 /* SceneDelegate.swift */,
-				0FFA06292412CCC200009939 /* Extensions */,
 				0FFA06252412C69F00009939 /* StroyBoards */,
 				0FFA06242412C63400009939 /* Controllers */,
 				0FFA06262412CBC600009939 /* Views */,
+				0FFA06332412CF3D00009939 /* SupportingFiles */,
 				0F30D60A240F672D00D5B7D1 /* Assets.xcassets */,
 				0F30D60F240F672D00D5B7D1 /* Info.plist */,
 				0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */,
@@ -150,6 +155,31 @@
 				0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FFA062C2412CD4000009939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0FFA062E2412CDC800009939 /* FirebaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				0FFA062F2412CE0400009939 /* AuthentificationSession.swift */,
+				0FFA06312412CE4A00009939 /* DatabaseService.swift */,
+			);
+			path = FirebaseServices;
+			sourceTree = "<group>";
+		};
+		0FFA06332412CF3D00009939 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0F30D601240F672B00D5B7D1 /* AppDelegate.swift */,
+				0F30D603240F672B00D5B7D1 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		2D05989FD475F05804F1F19C /* Frameworks */ = {
@@ -342,8 +372,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA06282412CBE500009939 /* DesignableView.swift in Sources */,
+				0FFA06322412CE4A00009939 /* DatabaseService.swift in Sources */,
 				0F30D606240F672B00D5B7D1 /* LoginViewController.swift in Sources */,
 				0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */,
+				0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */,
 				0F30D602240F672B00D5B7D1 /* AppDelegate.swift in Sources */,
 				0F30D604240F672B00D5B7D1 /* SceneDelegate.swift in Sources */,
 			);
