@@ -34,18 +34,18 @@
                                     <constraint firstAttribute="width" secondItem="W3U-xP-HWC" secondAttribute="height" multiplier="1:1" id="RNF-xC-utF"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email textfield" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-Pr-T1T" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3SM-Pr-T1T" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
                                 <rect key="frame" x="20" y="381.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password textfiled" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-YI-AWO" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-YI-AWO" customClass="DesignableTextField" customModule="PursuitInstagram_Project" customModuleProvider="target">
                                 <rect key="frame" x="20" y="435.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5r-5a-abv" customClass="DesignableButton" customModule="PursuitInstagram_Project" customModuleProvider="target">
-                                <rect key="frame" x="150" y="499.5" width="114" height="50"/>
+                                <rect key="frame" x="20" y="489.5" width="374" height="50"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-GM-qj5" customClass="DesignableButton" customModule="PursuitInstagram_Project" customModuleProvider="target">
-                                <rect key="frame" x="100" y="610.5" width="214" height="50"/>
+                                <rect key="frame" x="20" y="600.5" width="374" height="50"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.80926165803108807" green="0.40270645175317454" blue="0.2730495753374616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -65,13 +65,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0J-aN-52a">
-                                <rect key="frame" x="20" y="569.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="559.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-7P-KCf">
-                                <rect key="frame" x="20" y="680.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="670.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,40 +80,40 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3SM-Pr-T1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="13M-mE-zd9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0J-aN-52a" secondAttribute="trailing" constant="20" id="16x-yC-pl1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHI-7P-KCf" secondAttribute="trailing" constant="20" id="1V0-bP-nRA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZi-CP-GEq" secondAttribute="trailing" constant="20" id="2Yd-Vp-EPH"/>
-                            <constraint firstItem="z3U-GM-qj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="8zz-co-GZL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z3U-GM-qj5" secondAttribute="trailing" constant="100" id="E5k-5P-VjH"/>
                             <constraint firstItem="W3U-xP-HWC" firstAttribute="top" secondItem="SZi-CP-GEq" secondAttribute="bottom" constant="20" id="EHD-YT-YUx"/>
                             <constraint firstItem="LDQ-YI-AWO" firstAttribute="top" secondItem="3SM-Pr-T1T" secondAttribute="bottom" constant="20" id="Gsr-LK-u6Q"/>
+                            <constraint firstItem="c0J-aN-52a" firstAttribute="top" secondItem="A5r-5a-abv" secondAttribute="bottom" constant="20" id="IGg-lM-CIM"/>
                             <constraint firstItem="3SM-Pr-T1T" firstAttribute="top" secondItem="W3U-xP-HWC" secondAttribute="bottom" constant="20" id="JLg-WW-J9L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A5r-5a-abv" secondAttribute="trailing" constant="150" id="JjA-Os-DUw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LDQ-YI-AWO" secondAttribute="trailing" constant="20" id="L7t-vP-tgM"/>
-                            <constraint firstItem="c0J-aN-52a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Lyj-QO-kAc"/>
+                            <constraint firstItem="A5r-5a-abv" firstAttribute="top" secondItem="LDQ-YI-AWO" secondAttribute="bottom" constant="20" id="LpN-Nl-FSU"/>
+                            <constraint firstItem="z3U-GM-qj5" firstAttribute="top" secondItem="c0J-aN-52a" secondAttribute="bottom" constant="20" id="Mza-zc-qtC"/>
                             <constraint firstItem="3SM-Pr-T1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NE1-jl-MHs"/>
-                            <constraint firstItem="A5r-5a-abv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Nwb-LM-rni"/>
-                            <constraint firstItem="A5r-5a-abv" firstAttribute="top" secondItem="LDQ-YI-AWO" secondAttribute="bottom" constant="30" id="OIP-Ym-igx"/>
                             <constraint firstItem="W3U-xP-HWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="T90-Ag-6ev"/>
-                            <constraint firstItem="c0J-aN-52a" firstAttribute="top" secondItem="A5r-5a-abv" secondAttribute="bottom" constant="20" id="VwK-hB-1g9"/>
                             <constraint firstItem="SZi-CP-GEq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xbq-fJ-KMd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0J-aN-52a" secondAttribute="trailing" constant="20" id="YzU-6w-9of"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3SM-Pr-T1T" secondAttribute="trailing" constant="20" id="aFO-2x-YWB"/>
-                            <constraint firstItem="YHI-7P-KCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aKK-n8-tUr"/>
+                            <constraint firstItem="YHI-7P-KCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="btS-6g-AnP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3U-xP-HWC" secondAttribute="trailing" constant="100" id="eAQ-2A-dF7"/>
+                            <constraint firstItem="A5r-5a-abv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fxu-jQ-B57"/>
+                            <constraint firstItem="YHI-7P-KCf" firstAttribute="top" secondItem="z3U-GM-qj5" secondAttribute="bottom" constant="20" id="gB4-eg-z0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHI-7P-KCf" secondAttribute="trailing" constant="20" id="hG7-Bj-CbE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A5r-5a-abv" secondAttribute="trailing" constant="20" id="iYP-Qk-O5d"/>
                             <constraint firstItem="LDQ-YI-AWO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kYz-FS-R1R"/>
-                            <constraint firstItem="z3U-GM-qj5" firstAttribute="top" secondItem="c0J-aN-52a" secondAttribute="bottom" constant="20" id="nIf-zm-yps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z3U-GM-qj5" secondAttribute="trailing" constant="20" id="p1N-DL-Wg5"/>
                             <constraint firstItem="SZi-CP-GEq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pPj-Ym-HQP"/>
-                            <constraint firstItem="YHI-7P-KCf" firstAttribute="top" secondItem="z3U-GM-qj5" secondAttribute="bottom" constant="20" id="uIe-Xw-2MW"/>
+                            <constraint firstItem="z3U-GM-qj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vRN-gX-wxF"/>
+                            <constraint firstItem="c0J-aN-52a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yUb-4k-BeR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3SM-Pr-T1T" secondAttribute="trailing" constant="20" id="zXD-vw-gnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="createAccountLabel" destination="z3U-GM-qj5" id="i2f-5R-a1q"/>
-                        <outlet property="emailLabel" destination="3SM-Pr-T1T" id="aLq-Op-3Nr"/>
-                        <outlet property="errorLabel" destination="YHI-7P-KCf" id="zr6-8F-jxQ"/>
+                        <outlet property="emailTextField" destination="3SM-Pr-T1T" id="aLq-Op-3Nr"/>
+                        <outlet property="errorLabel" destination="YHI-7P-KCf" id="isV-Rm-Km6"/>
                         <outlet property="loginButton" destination="A5r-5a-abv" id="dgT-3A-AyG"/>
-                        <outlet property="passwordLabel" destination="LDQ-YI-AWO" id="4nM-xv-XvQ"/>
+                        <outlet property="passwordTextField" destination="LDQ-YI-AWO" id="4nM-xv-XvQ"/>
                         <outlet property="pursuitStagramImage" destination="W3U-xP-HWC" id="du8-PL-D4A"/>
                         <outlet property="pursuitStagramLabel" destination="SZi-CP-GEq" id="5gw-KP-eVy"/>
                         <outlet property="statusLabel" destination="c0J-aN-52a" id="bef-ex-VTc"/>
