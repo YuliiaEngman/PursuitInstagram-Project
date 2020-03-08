@@ -12,8 +12,7 @@ import FirebaseFirestore
 
 class DatabaseService {
    
-    /*
-    static let itemsCollection = "items" // to actess statis let we use class name + let itself
+    static let photoCollection = "photos" // to access statis let we use class name + let itself
     
     //let's get a refetance to the Firebase Firestore database
     
@@ -21,7 +20,7 @@ class DatabaseService {
     //db represent a top collection
     //eacj project will have its own database
     
-    public func createItem(itemName: String, price: Double, category: Category, displayName: String, completion: @escaping (Result<String, Error>) -> ()) {
+    public func createPhoto(photoName: String, userPostedName: String, completion: @escaping (Result<String, Error>) -> ()) {
         //user if optional and we need to use guard for it
         
         guard let user = Auth.auth().currentUser else { return }
@@ -29,7 +28,7 @@ class DatabaseService {
         //generate a document ID (we saving the item = document (anything, any piece of data)
         
         //here we generate a document for the "items" collection
-        let documentRef = db.collection(DatabaseService.itemsCollection).document()
+        let documentRef = db.collection(DatabaseService.photoCollection).document()
         
         //create a document in our "items" collection
        
@@ -45,7 +44,18 @@ class DatabaseService {
 //            let categoryName: String
 //        }
         
-        db.collection(DatabaseService.itemsCollection).document(documentRef.documentID).setData(["itemName":itemName, "price":price, "itemID":documentRef.documentID, "listedDate":Timestamp(date: Date()), "sellerName":displayName, "sellerID":user.uid, "categoryName":category.name]) {
+        /*
+         struct Photo {
+             let imageURL: String - no image URL???
+             let photoName: String
+             let photoId: String
+             let listedDate: Date
+             let userNameWhoPostedPicture: String
+             let userIdWhoPostedPicture: String
+         }
+         */
+        
+        db.collection(DatabaseService.photoCollection).document(documentRef.documentID).setData(["photoName":photoName, "photoId":documentRef.documentID, "listedDate":Timestamp(date: Date()), "userNameWhoPostedPicture":userPostedName, "userIdWhoPostedPicture":user.uid]) {
             (error) in
             if let error = error {
                // print("error creating item: \(error)")
@@ -56,6 +66,5 @@ class DatabaseService {
             }
         }
     }
- */
 }
 

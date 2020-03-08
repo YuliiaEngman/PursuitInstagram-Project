@@ -35,15 +35,15 @@ class PhotoFeedViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
          super.viewDidAppear(true)
-         listener = Firestore.firestore().collection(DatabaseService.itemsCollection).addSnapshotListener({ [weak self] (snapshot, error) in
+         listener = Firestore.firestore().collection(DatabaseService.photoCollection).addSnapshotListener({ [weak self] (snapshot, error) in
              if let error = error {
                  DispatchQueue.main.async {
                      self?.showAlert(title: "try again later", message: "\(error.localizedDescription)")
                  }
              } else if let snapshot = snapshot {
                  //print("there are \(snapshot.documents.count) item for sale")
-                 let items = snapshot.documents.map { Item($0.data())}
-                 self?.items = items
+                 let photos = snapshot.documents.map { Photo($0.data())}
+                 self?.photos = photos
              }
          })
      }
