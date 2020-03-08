@@ -40,15 +40,16 @@ class AddPhotoViewController: UIViewController {
 //    init?(coder: NSCoder) {
 //      super.init(coder: coder)
 //    }
-    
-    required init?(coder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-    }
+//
+//    required init?(coder: NSCoder) {
+//      fatalError("init(coder:) has not been implemented")
+//    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Add Your Photo"
+        namePhotoTextField.delegate = self
         
         photoImage.isUserInteractionEnabled = true
         photoImage.addGestureRecognizer(longPressGesture)
@@ -98,6 +99,7 @@ class AddPhotoViewController: UIViewController {
           self?.uploadPhoto(photo: resizedImage, documentId: documentId)
         }
     }
+        dismiss(animated: true)
 }
     
     private func uploadPhoto(photo: UIImage, documentId: String) {
@@ -138,5 +140,12 @@ extension AddPhotoViewController: UIImagePickerControllerDelegate, UINavigationC
       }
       selectedImage = image
       dismiss(animated: true)
+    }
+}
+
+extension AddPhotoViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
