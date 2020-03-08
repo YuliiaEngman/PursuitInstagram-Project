@@ -75,7 +75,7 @@ class AddPhotoViewController: UIViewController {
     }
 
     @IBAction func postButtonPressed(_ sender: UIButton) {
-        guard let photoName = namePhotoTextField.text, !photoName.isEmpty,
+        guard let photoName = namePhotoTextField.text?.capitalized, !photoName.isEmpty,
             let selectedPhoto = selectedImage else {
                 showAlert(title: "Missing Fields", message: "All fields are required along with a photo.")
                 return
@@ -97,6 +97,7 @@ class AddPhotoViewController: UIViewController {
           }
         case .success(let documentId):
           self?.uploadPhoto(photo: resizedImage, documentId: documentId)
+          self?.showAlert(title: "", message: "Your photo was successfully added to your photo collection")
         }
     }
         dismiss(animated: true)

@@ -18,6 +18,7 @@
 		0F4B968B2415427900B96C0F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B968A2415427900B96C0F /* PhotoModel.swift */; };
 		0F4B968E2415457F00B96C0F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B968D2415457F00B96C0F /* PhotoCell.xib */; };
 		0F4B969424154BDB00B96C0F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B969324154BDB00B96C0F /* PhotoCell.swift */; };
+		0F4B96982415BBFE00B96C0F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B96972415BBFE00B96C0F /* DetailViewController.swift */; };
 		0FFA06282412CBE500009939 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06272412CBE500009939 /* DesignableView.swift */; };
 		0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */; };
 		0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062F2412CE0400009939 /* AuthentificationSession.swift */; };
@@ -60,6 +61,7 @@
 		0F4B968A2415427900B96C0F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		0F4B968D2415457F00B96C0F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		0F4B969324154BDB00B96C0F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0F4B96972415BBFE00B96C0F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FFA06272412CBE500009939 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0FFA062F2412CE0400009939 /* AuthentificationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationSession.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				0F30D605240F672B00D5B7D1 /* LoginViewController.swift */,
 				0FFA063A2412FB8500009939 /* MainTabBarController.swift */,
 				0FFA063C2412FC5400009939 /* PhotoFeedViewController.swift */,
+				0F4B96972415BBFE00B96C0F /* DetailViewController.swift */,
 				0FFA063E2412FC9D00009939 /* AddPhotoViewController.swift */,
 				0FFA06402412FD1B00009939 /* ProfileViewController.swift */,
 				0FFA06342412F73B00009939 /* UIViewController+Navigation.swift */,
@@ -415,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA06282412CBE500009939 /* DesignableView.swift in Sources */,
+				0F4B96982415BBFE00B96C0F /* DetailViewController.swift in Sources */,
 				0FFA063F2412FC9D00009939 /* AddPhotoViewController.swift in Sources */,
 				0FFA06322412CE4A00009939 /* DatabaseService.swift in Sources */,
 				0F4B968B2415427900B96C0F /* PhotoModel.swift in Sources */,

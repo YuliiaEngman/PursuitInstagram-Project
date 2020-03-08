@@ -57,7 +57,7 @@ class PhotoFeedViewController: UIViewController {
 extension PhotoFeedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //FIXME: return photos.count
-        return 10
+        return photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -65,8 +65,8 @@ extension PhotoFeedViewController: UICollectionViewDataSource {
             fatalError("could not downcast to PhotoCell")
         }
         //FIXME: uncommect 2 lines of code bellow
-        //let savedPhoto = photos[indexPath.row]
-       // cell.configureCell(for: savedPhoto)
+        let savedPhoto = photos[indexPath.row]
+       cell.configureCell(for: savedPhoto)
         return cell
     }
 }
@@ -76,7 +76,7 @@ extension PhotoFeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let maxSize: CGSize = UIScreen.main.bounds.size
         let itemWidth: CGFloat = maxSize.width
-        let itemHeight: CGFloat = maxSize.height * 0.30
+        let itemHeight: CGFloat = maxSize.height * 0.50
         return CGSize(width: itemWidth, height: itemHeight)
     }
 }
