@@ -16,6 +16,7 @@
 		0F30D619240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30D618240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift */; };
 		0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */; };
 		0F4B968B2415427900B96C0F /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B968A2415427900B96C0F /* PictureModel.swift */; };
+		0F4B968E2415457F00B96C0F /* PictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B968D2415457F00B96C0F /* PictureCell.xib */; };
 		0FFA06282412CBE500009939 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06272412CBE500009939 /* DesignableView.swift */; };
 		0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */; };
 		0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062F2412CE0400009939 /* AuthentificationSession.swift */; };
@@ -56,6 +57,7 @@
 		0F30D61A240F672D00D5B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F4B968A2415427900B96C0F /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		0F4B968D2415457F00B96C0F /* PictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCell.xib; sourceTree = "<group>"; };
 		0FFA06272412CBE500009939 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0FFA062F2412CE0400009939 /* AuthentificationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationSession.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				0FFA06252412C69F00009939 /* StroyBoards */,
 				0FFA06242412C63400009939 /* Controllers */,
 				0FFA06262412CBC600009939 /* Views */,
+				0F4B968C2415455F00B96C0F /* Cell */,
 				0FFA06332412CF3D00009939 /* SupportingFiles */,
 				0F30D60A240F672D00D5B7D1 /* Assets.xcassets */,
 				0F30D60F240F672D00D5B7D1 /* Info.plist */,
@@ -140,6 +143,14 @@
 				0F30D61A240F672D00D5B7D1 /* Info.plist */,
 			);
 			path = "PursuitInstagram-ProjectTests";
+			sourceTree = "<group>";
+		};
+		0F4B968C2415455F00B96C0F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B968D2415457F00B96C0F /* PictureCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0FFA06242412C63400009939 /* Controllers */ = {
@@ -315,6 +326,7 @@
 			files = (
 				0F30D60E240F672D00D5B7D1 /* LaunchScreen.storyboard in Resources */,
 				0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */,
+				0F4B968E2415457F00B96C0F /* PictureCell.xib in Resources */,
 				0FFA06392412F79B00009939 /* MainView.storyboard in Resources */,
 				0F30D60B240F672D00D5B7D1 /* Assets.xcassets in Resources */,
 				0F30D609240F672B00D5B7D1 /* LoginViewStoryboard.storyboard in Resources */,
