@@ -9,14 +9,14 @@
 import UIKit
 import Kingfisher
 
-class PictureCell: UICollectionViewCell {
+class PhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var pictureImage: UIImageView!
     @IBOutlet weak var imageNameLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var postedDateLabel: UILabel!
     
-    public func configureCell(for picture: Picture) {
+    public func configureCell(for picture: Photo) {
         pictureImage.kf.setImage(with: URL(string: picture.imageURL))
         imageNameLabel.text = picture.pictureName
         userNameLabel.text = "@\(picture.userNameWhoPostedPicture)"

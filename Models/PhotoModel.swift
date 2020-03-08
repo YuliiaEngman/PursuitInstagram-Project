@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Picture {
+struct Photo {
     let imageURL: String
     let pictureName: String
     let pictureId: String
@@ -17,7 +17,7 @@ struct Picture {
     let userIdWhoPostedPicture: String
 }
 
-extension Picture {
+extension Photo {
     init(_ dictionary: [String: Any]) {
         self.imageURL = dictionary["imageURL"] as? String ?? "no image url"
         self.pictureName = dictionary["pictureName"] as? String ?? "no picture name"

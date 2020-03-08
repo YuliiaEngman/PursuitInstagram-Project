@@ -15,9 +15,9 @@
 		0F30D60E240F672D00D5B7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30D60C240F672D00D5B7D1 /* LaunchScreen.storyboard */; };
 		0F30D619240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30D618240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift */; };
 		0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */; };
-		0F4B968B2415427900B96C0F /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B968A2415427900B96C0F /* PictureModel.swift */; };
+		0F4B968B2415427900B96C0F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B968A2415427900B96C0F /* PhotoModel.swift */; };
 		0F4B968E2415457F00B96C0F /* PictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B968D2415457F00B96C0F /* PictureCell.xib */; };
-		0F4B9692241548B700B96C0F /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B9691241548B700B96C0F /* PictureCell.swift */; };
+		0F4B969424154BDB00B96C0F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B969324154BDB00B96C0F /* PhotoCell.swift */; };
 		0FFA06282412CBE500009939 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06272412CBE500009939 /* DesignableView.swift */; };
 		0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */; };
 		0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062F2412CE0400009939 /* AuthentificationSession.swift */; };
@@ -57,9 +57,9 @@
 		0F30D618240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PursuitInstagram_ProjectTests.swift; sourceTree = "<group>"; };
 		0F30D61A240F672D00D5B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0F4B968A2415427900B96C0F /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		0F4B968A2415427900B96C0F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		0F4B968D2415457F00B96C0F /* PictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCell.xib; sourceTree = "<group>"; };
-		0F4B9691241548B700B96C0F /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		0F4B969324154BDB00B96C0F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		0FFA06272412CBE500009939 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0FFA062F2412CE0400009939 /* AuthentificationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationSession.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				0F4B968D2415457F00B96C0F /* PictureCell.xib */,
-				0F4B9691241548B700B96C0F /* PictureCell.swift */,
+				0F4B969324154BDB00B96C0F /* PhotoCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 		0FFA062C2412CD4000009939 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0F4B968A2415427900B96C0F /* PictureModel.swift */,
+				0F4B968A2415427900B96C0F /* PhotoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,12 +417,12 @@
 				0FFA06282412CBE500009939 /* DesignableView.swift in Sources */,
 				0FFA063F2412FC9D00009939 /* AddPhotoViewController.swift in Sources */,
 				0FFA06322412CE4A00009939 /* DatabaseService.swift in Sources */,
-				0F4B968B2415427900B96C0F /* PictureModel.swift in Sources */,
+				0F4B968B2415427900B96C0F /* PhotoModel.swift in Sources */,
+				0F4B969424154BDB00B96C0F /* PhotoCell.swift in Sources */,
 				0FFA063B2412FB8500009939 /* MainTabBarController.swift in Sources */,
 				0FFA063D2412FC5400009939 /* PhotoFeedViewController.swift in Sources */,
 				0F30D606240F672B00D5B7D1 /* LoginViewController.swift in Sources */,
 				0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */,
-				0F4B9692241548B700B96C0F /* PictureCell.swift in Sources */,
 				0FFA06352412F73B00009939 /* UIViewController+Navigation.swift in Sources */,
 				0FFA06302412CE0400009939 /* AuthentificationSession.swift in Sources */,
 				0F30D602240F672B00D5B7D1 /* AppDelegate.swift in Sources */,
