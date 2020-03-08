@@ -16,34 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v4-5V-fxL">
-                                <rect key="frame" x="20" y="84" width="374" height="32"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-eG-4Pz">
-                                <rect key="frame" x="0.0" y="146" width="414" height="414"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-eG-4Pz">
+                                <rect key="frame" x="0.0" y="145" width="414" height="411.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Jgk-eG-4Pz" secondAttribute="height" multiplier="1:1" id="0Gm-mX-PVa"/>
+                                    <constraint firstAttribute="width" secondItem="Jgk-eG-4Pz" secondAttribute="height" multiplier="1:1" id="IOS-sQ-cnx"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Your Photo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cV5-CW-1HW">
+                                <rect key="frame" x="20" y="74" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgY-9h-xhF">
+                                <rect key="frame" x="184.5" y="588" width="45" height="38"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonPressed:" destination="DGG-uQ-aai" eventType="touchUpInside" id="ABA-aD-sAh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="leading" secondItem="rJt-Gc-RaS" secondAttribute="leading" id="Imq-iW-AyV"/>
-                            <constraint firstItem="1v4-5V-fxL" firstAttribute="top" secondItem="rJt-Gc-RaS" secondAttribute="top" constant="40" id="Kzk-RP-ipc"/>
-                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="top" secondItem="1v4-5V-fxL" secondAttribute="bottom" constant="30" id="Yp5-OS-gHd"/>
-                            <constraint firstItem="rJt-Gc-RaS" firstAttribute="trailing" secondItem="Jgk-eG-4Pz" secondAttribute="trailing" id="hl9-0G-z0n"/>
-                            <constraint firstItem="1v4-5V-fxL" firstAttribute="leading" secondItem="rJt-Gc-RaS" secondAttribute="leading" constant="20" id="qZQ-6X-rip"/>
-                            <constraint firstItem="rJt-Gc-RaS" firstAttribute="trailing" secondItem="1v4-5V-fxL" secondAttribute="trailing" constant="20" id="sdb-vk-ez6"/>
+                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="leading" secondItem="rJt-Gc-RaS" secondAttribute="leading" id="9qR-uu-hXK"/>
+                            <constraint firstItem="cV5-CW-1HW" firstAttribute="top" secondItem="rJt-Gc-RaS" secondAttribute="top" constant="30" id="CeJ-Ey-GX7"/>
+                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="top" secondItem="cV5-CW-1HW" secondAttribute="bottom" constant="30" id="ClH-RA-1xT"/>
+                            <constraint firstItem="rJt-Gc-RaS" firstAttribute="trailing" secondItem="cV5-CW-1HW" secondAttribute="trailing" constant="20" id="GWN-Od-fSo"/>
+                            <constraint firstItem="rgY-9h-xhF" firstAttribute="centerX" secondItem="O8B-Mf-uqM" secondAttribute="centerX" id="H8w-rp-nGR"/>
+                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="top" secondItem="cV5-CW-1HW" secondAttribute="bottom" constant="30" id="J6F-mQ-2f1"/>
+                            <constraint firstItem="rgY-9h-xhF" firstAttribute="top" secondItem="Jgk-eG-4Pz" secondAttribute="bottom" constant="30" id="WtL-SJ-h7y"/>
+                            <constraint firstItem="Jgk-eG-4Pz" firstAttribute="trailing" secondItem="rJt-Gc-RaS" secondAttribute="trailing" id="c3U-vC-3GH"/>
+                            <constraint firstItem="cV5-CW-1HW" firstAttribute="leading" secondItem="rJt-Gc-RaS" secondAttribute="leading" constant="20" id="iK6-lA-9Nz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rJt-Gc-RaS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Photo" image="plus" catalog="system" id="BNd-3z-w1R"/>
                     <connections>
+                        <outlet property="namePhotoTextField" destination="cV5-CW-1HW" id="Sgq-EF-lUJ"/>
                         <outlet property="photoImage" destination="Jgk-eG-4Pz" id="tfY-V0-Yhl"/>
-                        <outlet property="photoNameLabel" destination="1v4-5V-fxL" id="hbl-cq-CgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRj-0P-cXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -205,6 +215,7 @@
         <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
         <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
