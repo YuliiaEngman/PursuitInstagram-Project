@@ -18,7 +18,7 @@ class PhotoCell: UICollectionViewCell {
     
     public func configureCell(for photo: Photo) {
         photoImage.kf.setImage(with: URL(string: photo.imageURL))
-        photoNameLabel.text = photo.userNameWhoPostedPicture
+        photoNameLabel.text = photo.photoName
         userNameLabel.text = "@\(photo.userNameWhoPostedPicture)"
         postedDateLabel.text = photo.listedDate.description
     }

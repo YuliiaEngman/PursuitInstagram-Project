@@ -16,7 +16,7 @@
 		0F30D619240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30D618240F672D00D5B7D1 /* PursuitInstagram_ProjectTests.swift */; };
 		0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */; };
 		0F4B968B2415427900B96C0F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B968A2415427900B96C0F /* PhotoModel.swift */; };
-		0F4B968E2415457F00B96C0F /* PictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B968D2415457F00B96C0F /* PictureCell.xib */; };
+		0F4B968E2415457F00B96C0F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B968D2415457F00B96C0F /* PhotoCell.xib */; };
 		0F4B969424154BDB00B96C0F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B969324154BDB00B96C0F /* PhotoCell.swift */; };
 		0FFA06282412CBE500009939 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA06272412CBE500009939 /* DesignableView.swift */; };
 		0FFA062B2412CCFB00009939 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */; };
@@ -58,7 +58,7 @@
 		0F30D61A240F672D00D5B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F30D623240F68B200D5B7D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F4B968A2415427900B96C0F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
-		0F4B968D2415457F00B96C0F /* PictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCell.xib; sourceTree = "<group>"; };
+		0F4B968D2415457F00B96C0F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		0F4B969324154BDB00B96C0F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		0FFA06272412CBE500009939 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0FFA062A2412CCFB00009939 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		0F4B968C2415455F00B96C0F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0F4B968D2415457F00B96C0F /* PictureCell.xib */,
+				0F4B968D2415457F00B96C0F /* PhotoCell.xib */,
 				0F4B969324154BDB00B96C0F /* PhotoCell.swift */,
 			);
 			path = Cell;
@@ -329,7 +329,7 @@
 			files = (
 				0F30D60E240F672D00D5B7D1 /* LaunchScreen.storyboard in Resources */,
 				0F30D624240F68B200D5B7D1 /* GoogleService-Info.plist in Resources */,
-				0F4B968E2415457F00B96C0F /* PictureCell.xib in Resources */,
+				0F4B968E2415457F00B96C0F /* PhotoCell.xib in Resources */,
 				0FFA06392412F79B00009939 /* MainView.storyboard in Resources */,
 				0F30D60B240F672D00D5B7D1 /* Assets.xcassets in Resources */,
 				0F30D609240F672B00D5B7D1 /* LoginViewStoryboard.storyboard in Resources */,
