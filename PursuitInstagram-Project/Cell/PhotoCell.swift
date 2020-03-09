@@ -20,6 +20,21 @@ class PhotoCell: UICollectionViewCell {
         photoImage.kf.setImage(with: URL(string: photo.imageURL))
         photoNameLabel.text = photo.photoName
         userNameLabel.text = "@\(photo.userNameWhoPostedPicture)"
-        postedDateLabel.text = photo.listedDate.description
+        
+        //PART 1:
+        //format of the date what we have right now!
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss +0000"
+        //we having "yyyy-MM-dd HH:mm:ss +0000" // +0000=z
+        if let date = formatter.date(from: photo.listedDate.description) {
+            print(date)
+            
+            //PART 2:
+            //tiping format of date that we want to get!
+            let displayFormatter = DateFormatter()
+            displayFormatter.dateFormat = "MM/dd/yyyy HH:mm"
+            print(displayFormatter.string(from: date))
+            postedDateLabel.text = displayFormatter.string(from: date)
+        }
     }
 }

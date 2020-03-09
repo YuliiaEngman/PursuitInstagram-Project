@@ -25,7 +25,7 @@ class PhotoFeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Photo Detail"
+
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -78,5 +78,22 @@ extension PhotoFeedViewController: UICollectionViewDelegateFlowLayout {
         let itemWidth: CGFloat = maxSize.width
         let itemHeight: CGFloat = maxSize.height * 0.50
         return CGSize(width: itemWidth, height: itemHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //TODO: Segue to DetailVC
+        
+        let photo = photos[indexPath.row]
+        let mainViewSB = UIStoryboard(name: "MainView", bundle: nil)
+        let detailVC = mainViewSB.instantiateViewController(identifier: "DetailViewController") { coder in
+            return DetailViewController(coder: coder, photo: photo)
+        }
+        //present in a navigation navigationController
+       
+        present(UINavigationController(rootViewController: detailVC), animated: true, completion: nil)
     }
 }
