@@ -33,8 +33,9 @@ class PhotoCell: UICollectionViewCell {
             //tiping format of date that we want to get!
             let displayFormatter = DateFormatter()
             displayFormatter.dateFormat = "MM/dd/yyyy HH:mm"
-            print(displayFormatter.string(from: date))
+//            print(displayFormatter.string(from: date))
             postedDateLabel.text = displayFormatter.string(from: date)
+          print(photo.listedDate)
         }
     }
 }

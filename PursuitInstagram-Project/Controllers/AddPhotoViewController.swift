@@ -34,6 +34,9 @@ class AddPhotoViewController: UIViewController {
     private var selectedImage: UIImage? {
       didSet {
         photoImage.image = selectedImage
+//        UIImage(data: <#T##Data#>)
+//        photoImage.image = UIImage(named: "PhotoIcon")
+
       }
     }
     
@@ -48,11 +51,13 @@ class AddPhotoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         navigationItem.title = "Add Your Photo"
         namePhotoTextField.delegate = self
         
         photoImage.isUserInteractionEnabled = true
         photoImage.addGestureRecognizer(longPressGesture)
+
     }
     
     @objc private func showPhotoOptions() {
@@ -97,10 +102,10 @@ class AddPhotoViewController: UIViewController {
           }
         case .success(let documentId):
           self?.uploadPhoto(photo: resizedImage, documentId: documentId)
-          self?.showAlert(title: "", message: "Your photo was successfully added to your photo collection")
+          self?.showAlert2(message: "Your photo was successfully added to your photo collection")
         }
     }
-        dismiss(animated: true)
+       dismiss(animated: true)
 }
     
     private func uploadPhoto(photo: UIImage, documentId: String) {

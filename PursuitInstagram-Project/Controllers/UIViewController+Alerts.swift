@@ -16,4 +16,9 @@ extension UIViewController {
         present(alertController, animated: true)
     }
     
+    public func showAlert2(message: String?) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alertController, animated: true)
+    }
+    
 }
