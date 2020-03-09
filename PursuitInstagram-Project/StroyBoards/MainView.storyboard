@@ -130,7 +130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-3M-6EO" customClass="DesignableImageView" customModule="PursuitInstagram_Project" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-3M-6EO">
                                 <rect key="frame" x="142" y="74.5" width="130" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="CGq-JD-y6c"/>
@@ -138,7 +138,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="60"/>
+                                        <real key="value" value="59"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -199,7 +199,7 @@
                     <connections>
                         <outlet property="displayUsernameTextField" destination="geA-tu-W7s" id="oAw-by-mxJ"/>
                         <outlet property="emailLabel" destination="Ijn-37-uZt" id="v3O-cJ-82r"/>
-                        <outlet property="profileImageView" destination="8Pp-3M-6EO" id="7Xh-D4-UIK"/>
+                        <outlet property="profileImageView" destination="8Pp-3M-6EO" id="eYJ-d6-Ofm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gry-Ie-hEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -224,7 +224,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pNG-w0-KOe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="pNG-w0-KOe" customClass="PhotoCell" customModule="PursuitInstagram_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yxB-o3-a9q">

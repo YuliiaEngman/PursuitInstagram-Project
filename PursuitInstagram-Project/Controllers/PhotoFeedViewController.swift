@@ -42,7 +42,7 @@ class PhotoFeedViewController: UIViewController {
                  }
              } else if let snapshot = snapshot {
                  //print("there are \(snapshot.documents.count) item for sale")
-                 let photos = snapshot.documents.map { Photo($0.data())}
+                let photos = snapshot.documents.map { Photo($0.data())}
                  self?.photos = photos
              }
          })

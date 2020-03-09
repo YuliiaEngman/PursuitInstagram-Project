@@ -12,7 +12,8 @@ import Kingfisher
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var profileImageView: DesignableImageView!
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     @IBOutlet weak var displayUsernameTextField: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     
